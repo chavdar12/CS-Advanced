@@ -7,7 +7,7 @@ internal class Program
         var matrixSizes = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
         var matrix = new int[matrixSizes[0], matrixSizes[1]];
         var matrix2x2 = new int[2, 2];
-        var biggestSum = 0;
+        var biggestSum = int.MinValue;
         for (var i = 0; i < matrixSizes[0]; i++)
         {
             var row = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();

@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>annotations</Nullable>
+  </PropertyGroup>
+
+  <!-- Every exercise is a console app; the module folder prefix keeps assembly names unique (many projects are called ExNNN). -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' != 'CS-Advanced.Tests'">
+    <OutputType>Exe</OutputType>
+    <AssemblyName>$([System.IO.Path]::GetFileName($([System.IO.Path]::GetDirectoryName($(MSBuildProjectDirectory))))).$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+</Project>

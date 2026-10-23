@@ -16,12 +16,10 @@ internal class Program
             switch (addRemove)
             {
                 case "Add filter":
-                    var currentPredicate = GetPredicate(condition, argument);
-                    filters.Add(argument, currentPredicate);
+                    filters[$"{condition};{argument}"] = GetPredicate(condition, argument);
                     break;
                 case "Remove filter":
-                    GetPredicate(condition, argument);
-                    filters.Remove(argument);
+                    filters.Remove($"{condition};{argument}");
                     break;
             }
         }

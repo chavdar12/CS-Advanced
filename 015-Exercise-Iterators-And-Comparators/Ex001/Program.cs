@@ -17,7 +17,7 @@ internal class Program
 
         var n = int.Parse(Console.ReadLine());
 
-        if (people.Count > n)
+        if (n >= 1 && n <= people.Count)
         {
             var filterPerson = people[n - 1];
             foreach (var person in people)

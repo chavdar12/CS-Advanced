@@ -4,15 +4,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var knightPossibleMoves = new Queue<Tuple<int, int>>();
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(-1, -2));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(1, -2));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(-2, -1));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(2, -1));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(-2, 1));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(2, 1));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(-1, 2));
-        knightPossibleMoves.Enqueue(new Tuple<int, int>(1, 2));
+        var knightPossibleMoves = new (int Row, int Col)[]
+        {
+            (-1, -2), (1, -2), (-2, -1), (2, -1), (-2, 1), (2, 1), (-1, 2), (1, 2)
+        };
         var chessBoardSize = int.Parse(Console.ReadLine());
         var chessBoard = new char[chessBoardSize, chessBoardSize];
         for (var i = 0; i < chessBoardSize; i++)
@@ -21,53 +16,33 @@ internal class Program
             for (var j = 0; j < chessBoardSize; j++) chessBoard[i, j] = row[j];
         }
 
-        var foundMost = true;
-        var currentKnightsAround = 0;
-        var mostKnightsAround = 0;
-        var IdxRowMostKnights = int.MinValue;
-        var IdxColMostKnights = int.MinValue;
         var counter = 0;
-        while (foundMost)
+        while (true)
         {
+            var mostKnightsAround = 0;
+            var idxRowMostKnights = -1;
+            var idxColMostKnights = -1;
             for (var i = 0; i < chessBoardSize; i++)
             for (var j = 0; j < chessBoardSize; j++)
             {
-                if (chessBoard[i, j] == 'K')
-                    for (var k = 1; k <= knightPossibleMoves.Count; k++)
-                    {
-                        var row = knightPossibleMoves.Peek().Item1;
-                        var col = knightPossibleMoves.Peek().Item2;
-                        knightPossibleMoves.Enqueue(knightPossibleMoves.Dequeue());
-                        try
-                        {
-                            if (chessBoard[i + row, j + col] == 'K') currentKnightsAround++;
-                        }
-                        catch (Exception)
-                        {
-                            continue;
-                        }
-                    }
+                if (chessBoard[i, j] != 'K') continue;
 
-                foundMost = currentKnightsAround > 0;
+                var currentKnightsAround = knightPossibleMoves.Count(m =>
+                    i + m.Row >= 0 && i + m.Row < chessBoardSize &&
+                    j + m.Col >= 0 && j + m.Col < chessBoardSize &&
+                    chessBoard[i + m.Row, j + m.Col] == 'K');
                 if (currentKnightsAround > mostKnightsAround)
                 {
-                    IdxRowMostKnights = i;
-                    IdxColMostKnights = j;
                     mostKnightsAround = currentKnightsAround;
+                    idxRowMostKnights = i;
+                    idxColMostKnights = j;
                 }
-
-                currentKnightsAround = 0;
             }
 
-            if (foundMost == (IdxRowMostKnights != int.MinValue && IdxColMostKnights != int.MinValue))
-            {
-                chessBoard[IdxRowMostKnights, IdxColMostKnights] = '0';
-                counter++;
-            }
+            if (mostKnightsAround == 0) break;
 
-            mostKnightsAround = 0;
-            IdxRowMostKnights = int.MinValue;
-            IdxColMostKnights = int.MinValue;
+            chessBoard[idxRowMostKnights, idxColMostKnights] = '0';
+            counter++;
         }
 
         Console.WriteLine(counter);

@@ -13,16 +13,11 @@ internal class Program
             switch (commands[0])
             {
                 case "Double":
-                {
-                    var doubleIt = partyPeople.FindAll(command);
-                    if (doubleIt.Any())
-                    {
-                        var idx = partyPeople.FindIndex(command);
-                        partyPeople.InsertRange(idx, doubleIt);
-                    }
+                    for (var i = partyPeople.Count - 1; i >= 0; i--)
+                        if (command(partyPeople[i]))
+                            partyPeople.Insert(i, partyPeople[i]);
 
                     break;
-                }
                 case "Remove":
                     partyPeople.RemoveAll(command);
                     break;

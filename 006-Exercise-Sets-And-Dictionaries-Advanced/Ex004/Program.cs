@@ -75,7 +75,7 @@ internal class Program
     private static bool Validation(string con, string pass, Dictionary<string, string> dict)
     {
         if (dict.ContainsKey(con))
-            if (dict[con].Contains(pass))
+            if (dict[con] == pass)
                 return true;
 
         return false;

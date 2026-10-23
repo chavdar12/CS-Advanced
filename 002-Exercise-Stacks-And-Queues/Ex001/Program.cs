@@ -15,23 +15,17 @@ internal class Program
 
         foreach (var parenthesis in parentheses)
         {
-            if (parentheses.Length % 2 != 0 || parentheses.Length == 0)
-            {
-                isBalanced = false;
-                break;
-            }
-
             if (pairs.ContainsKey(parenthesis))
             {
                 parenthesesStack.Push(parenthesis);
             }
-            else
+            else if (parenthesesStack.Count == 0 || pairs[parenthesesStack.Pop()] != parenthesis)
             {
-                var openParenthesis = parenthesesStack.Pop();
-                if (pairs[openParenthesis] != parenthesis) isBalanced = false;
+                isBalanced = false;
+                break;
             }
         }
 
-        Console.WriteLine(isBalanced ? "YES" : "NO");
+        Console.WriteLine(isBalanced && parenthesesStack.Count == 0 ? "YES" : "NO");
     }
 }

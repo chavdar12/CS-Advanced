@@ -4,14 +4,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var input = new Queue<int>(Console.ReadLine().Split().Select(int.Parse).Reverse());
+        var input = new Queue<int>(Console.ReadLine().Split().Select(int.Parse));
 
-        while (input.Any(i => i % 2 != 0))
-            if (input.Peek() % 2 == 0)
-                input.Enqueue(input.Dequeue());
-            else
-                input.Dequeue();
+        // One full rotation keeps the evens in their original order.
+        var count = input.Count;
+        for (var i = 0; i < count; i++)
+        {
+            var number = input.Dequeue();
+            if (number % 2 == 0) input.Enqueue(number);
+        }
 
-        Console.WriteLine(string.Join(", ", input.Reverse()));
+        Console.WriteLine(string.Join(", ", input));
     }
 }

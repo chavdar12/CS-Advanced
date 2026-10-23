@@ -2,7 +2,7 @@
 
 public class DoublyLinkedList<T>
 {
-    public class ListNode<T>
+    public class ListNode
     {
         public ListNode(T value)
         {
@@ -10,23 +10,23 @@ public class DoublyLinkedList<T>
         }
 
         public T Value { get; set; }
-        public ListNode<T> Previous { get; set; }
-        public ListNode<T> Next { get; set; }
+        public ListNode Previous { get; set; }
+        public ListNode Next { get; set; }
     }
 
-    private ListNode<T> Head { get; set; }
-    private ListNode<T> Tail { get; set; }
+    private ListNode Head { get; set; }
+    private ListNode Tail { get; set; }
     public int Count { get; private set; }
 
     public void AddFirst(T element)
     {
         if (Count == 0)
         {
-            Head = Tail = new ListNode<T>(element);
+            Head = Tail = new ListNode(element);
         }
         else
         {
-            var currentListNode = new ListNode<T>(element);
+            var currentListNode = new ListNode(element);
             currentListNode.Next = Head;
             Head.Previous = currentListNode;
             Head = currentListNode;
@@ -39,11 +39,11 @@ public class DoublyLinkedList<T>
     {
         if (Count == 0)
         {
-            Head = Tail = new ListNode<T>(element);
+            Head = Tail = new ListNode(element);
         }
         else
         {
-            var currentListNode = new ListNode<T>(element);
+            var currentListNode = new ListNode(element);
             currentListNode.Previous = Tail;
             Tail.Next = currentListNode;
             Tail = currentListNode;
@@ -58,7 +58,8 @@ public class DoublyLinkedList<T>
 
         var firstListNode = Head.Value;
         Head = Head.Next;
-        Head.Previous = null;
+        if (Head == null) Tail = null;
+        else Head.Previous = null;
 
         Count--;
         return firstListNode;
@@ -70,7 +71,8 @@ public class DoublyLinkedList<T>
 
         var lastListNode = Tail.Value;
         Tail = Tail.Previous;
-        Tail.Next = null;
+        if (Tail == null) Head = null;
+        else Tail.Next = null;
 
         Count--;
         return lastListNode;

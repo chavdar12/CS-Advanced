@@ -1,0 +1,130 @@
+<Solution>
+  <Folder Name="/001-Stacks-And-Queues/">
+    <Project Path="001-Stacks-And-Queues/Ex001/Ex001.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex002/Ex002.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex003/Ex003.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex004/Ex004.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex005/Ex005.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex006/Ex006.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex007/Ex007.csproj" />
+    <Project Path="001-Stacks-And-Queues/Ex008/Ex008.csproj" />
+  </Folder>
+  <Folder Name="/002-Exercise-Stacks-And-Queues/">
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex001/Ex001.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex002/Ex002.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex003/Ex003.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex004/Ex004.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex005/Ex005.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex006/Ex006.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex007/Ex007.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex008/Ex008.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex009/Ex009.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex010/Ex010.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex011/Ex011.csproj" />
+    <Project Path="002-Exercise-Stacks-And-Queues/Ex012/Ex012.csproj" />
+  </Folder>
+  <Folder Name="/003-Multidimensional-Arrays/">
+    <Project Path="003-Multidimensional-Arrays/Ex001/Ex001.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex002/Ex002.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex003/Ex003.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex004/Ex004.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex005/Ex005.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex006/Ex006.csproj" />
+    <Project Path="003-Multidimensional-Arrays/Ex007/Ex007.csproj" />
+  </Folder>
+  <Folder Name="/004-Exercise-Multidimensional-Arrays/">
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex001/Ex001.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex002/Ex002.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex003/Ex003.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex004/Ex004.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex005/Ex005.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex006/Ex006.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex007/Ex007.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex008/Ex008.csproj" />
+    <Project Path="004-Exercise-Multidimensional-Arrays/Ex009/Ex009.csproj" />
+  </Folder>
+  <Folder Name="/005-Sets-And-Dictionaries-Advanced/">
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex001/Ex001.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex002/Ex002.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex003/Ex003.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex004/Ex004.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex005/Ex005.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex006/Ex006.csproj" />
+    <Project Path="005-Sets-And-Dictionaries-Advanced/Ex007/Ex007.csproj" />
+  </Folder>
+  <Folder Name="/006-Exercise-Sets-And-Dictionaries-Advanced/">
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex001/Ex001.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex002/Ex002.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex003/Ex003.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex004/Ex004.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex005/Ex005.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex006/Ex006.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex007/Ex007.csproj" />
+    <Project Path="006-Exercise-Sets-And-Dictionaries-Advanced/Ex008/Ex008.csproj" />
+  </Folder>
+  <Folder Name="/007-Exercise-Streams-Files-And-Directories/">
+    <Project Path="007-Exercise-Streams-Files-And-Directories/Ex001/Ex001.csproj" />
+  </Folder>
+  <Folder Name="/008-Functional-Programming/">
+    <Project Path="008-Functional-Programming/Ex001/Ex001.csproj" />
+    <Project Path="008-Functional-Programming/Ex002/Ex002.csproj" />
+    <Project Path="008-Functional-Programming/Ex003/Ex003.csproj" />
+    <Project Path="008-Functional-Programming/Ex004/Ex004.csproj" />
+    <Project Path="008-Functional-Programming/Ex005/Ex005.csproj" />
+  </Folder>
+  <Folder Name="/009-Exercise-Functional-Programming/">
+    <Project Path="009-Exercise-Functional-Programming/Ex001/Ex001.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex002/Ex002.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex003/Ex003.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex004/Ex004.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex005/Ex005.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex006/Ex006.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex007/Ex007.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex008/Ex008.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex009/Ex009.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex010/Ex010.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex011/Ex011.csproj" />
+    <Project Path="009-Exercise-Functional-Programming/Ex012/Ex012.csproj" />
+  </Folder>
+  <Folder Name="/010-Defining-Classes/">
+    <Project Path="010-Defining-Classes/Ex001/Ex001.csproj" />
+  </Folder>
+  <Folder Name="/011-Exercise-Defining-Classes/">
+    <Project Path="011-Exercise-Defining-Classes/Ex001/Ex001.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex002/Ex002.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex003/Ex003.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex004/Ex004.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex005/Ex005.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex006/Ex006.csproj" />
+    <Project Path="011-Exercise-Defining-Classes/Ex007/Ex007.csproj" />
+  </Folder>
+  <Folder Name="/012-Generics/">
+    <Project Path="012-Generics/Ex001/Ex001.csproj" />
+    <Project Path="012-Generics/Ex002/Ex002.csproj" />
+    <Project Path="012-Generics/Ex003/Ex003.csproj" />
+  </Folder>
+  <Folder Name="/013-Exercise-Generics/">
+    <Project Path="013-Exercise-Generics/Ex001/Ex001.csproj" />
+    <Project Path="013-Exercise-Generics/Ex002/Ex002.csproj" />
+    <Project Path="013-Exercise-Generics/Ex003/Ex003.csproj" />
+    <Project Path="013-Exercise-Generics/Ex004/Ex004.csproj" />
+    <Project Path="013-Exercise-Generics/Ex005/Ex005.csproj" />
+    <Project Path="013-Exercise-Generics/Ex006/Ex006.csproj" />
+    <Project Path="013-Exercise-Generics/Ex007/Ex007.csproj" />
+    <Project Path="013-Exercise-Generics/Ex008/Ex008.csproj" />
+    <Project Path="013-Exercise-Generics/Ex009/Ex009.csproj" />
+  </Folder>
+  <Folder Name="/014-Iterators-And-Comparators/">
+    <Project Path="014-Iterators-And-Comparators/Ex001/Ex001.csproj" />
+  </Folder>
+  <Folder Name="/015-Exercise-Iterators-And-Comparators/">
+    <Project Path="015-Exercise-Iterators-And-Comparators/Ex001/Ex001.csproj" />
+    <Project Path="015-Exercise-Iterators-And-Comparators/Ex002/Ex002.csproj" />
+    <Project Path="015-Exercise-Iterators-And-Comparators/Ex003/Ex003.csproj" />
+    <Project Path="015-Exercise-Iterators-And-Comparators/Ex004/Ex004.csproj" />
+    <Project Path="015-Exercise-Iterators-And-Comparators/Ex005/Ex005.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/CS-Advanced.Tests.csproj" />
+  </Folder>
+</Solution>

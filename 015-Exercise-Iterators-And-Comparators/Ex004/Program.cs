@@ -15,7 +15,7 @@ internal class Program
             {
                 case "Create":
                     commands.RemoveAt(0);
-                    if (commands.Count > 0) iterator = new ListyIterator<string>(commands.ToArray());
+                    iterator = new ListyIterator<string>(commands.ToArray());
                     break;
                 case "Move":
                     Console.WriteLine(iterator.Move());

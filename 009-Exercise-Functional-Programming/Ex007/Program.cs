@@ -10,20 +10,7 @@ internal class Program
             .ToArray();
         for (var i = 0; i < n; i++) array[i] = i + 1;
 
-        var finalArray = Array.FindAll(array, i =>
-        {
-            var dividable = false;
-            foreach (var div in dividers)
-            {
-                if (i % div == 0) dividable = true;
-
-                if (!dividable || i % div == 0) continue;
-                dividable = false;
-                break;
-            }
-
-            return dividable;
-        });
+        var finalArray = Array.FindAll(array, i => dividers.All(div => i % div == 0));
         Console.WriteLine(string.Join(" ", finalArray));
     }
 }

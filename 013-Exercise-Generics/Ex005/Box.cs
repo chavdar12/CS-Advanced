@@ -1,4 +1,4 @@
-﻿namespace Ex002;
+﻿namespace Ex005;
 
 public class Box<T>
 {
@@ -7,7 +7,7 @@ public class Box<T>
         Value = value;
     }
 
-    private T Value { get; set; }
+    public T Value { get; set; }
 
     public override string ToString()
     {

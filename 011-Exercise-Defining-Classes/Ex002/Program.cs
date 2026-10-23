@@ -11,22 +11,11 @@ internal class Program
         {
             var engineInfo = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             var currentEngine = new Engine(engineInfo[0], engineInfo[1]);
-            try
-            {
-                if (int.TryParse(engineInfo[2], out _))
-                    currentEngine.Displacement = engineInfo[2];
+            foreach (var optional in engineInfo.Skip(2))
+                if (int.TryParse(optional, out _))
+                    currentEngine.Displacement = optional;
                 else
-                    currentEngine.Efficiency = engineInfo[2];
-                if (int.TryParse(engineInfo[3], out _))
-                    currentEngine.Displacement = engineInfo[3];
-                else
-                    currentEngine.Efficiency = engineInfo[3];
-            }
-            catch (Exception)
-            {
-                // ignored
-                continue;
-            }
+                    currentEngine.Efficiency = optional;
 
             engineModels.Add(currentEngine);
         }
@@ -36,22 +25,11 @@ internal class Program
         {
             var carInfo = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             var currentCar = new Car(carInfo[0], engineModels.First(e => e.Model == carInfo[1]));
-            try
-            {
-                if (int.TryParse(carInfo[2], out _))
-                    currentCar.Weight = carInfo[2];
+            foreach (var optional in carInfo.Skip(2))
+                if (int.TryParse(optional, out _))
+                    currentCar.Weight = optional;
                 else
-                    currentCar.Color = carInfo[2];
-                if (int.TryParse(carInfo[3], out _))
-                    currentCar.Weight = carInfo[3];
-                else
-                    currentCar.Color = carInfo[3];
-            }
-            catch (Exception)
-            {
-                // ignored
-                continue;
-            }
+                    currentCar.Color = optional;
 
             cars.Add(currentCar);
         }
